@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   return (
@@ -18,6 +19,7 @@ export default function Navbar() {
           Contact
         </Link>
       </nav>
+      <ThemeToggle />
     </header>
   );
 }
