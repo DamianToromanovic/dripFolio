@@ -1,46 +1,72 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import CreapyMe from "./CreapyMe";
+import { useRef } from "react";
 
 export default function Hero() {
+  const heroRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const rect = heroRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const percentX = x / rect.width;
+    const percentY = y / rect.height;
+
+    const offsetX = (percentX - 0.5) * 12;
+    const offsetY = (percentY - 0.5) * 8;
+
+    const leftEye = document.querySelector("#left-eye");
+    const rightEye = document.querySelector("#right-eye");
+
+    if (leftEye)
+      leftEye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    if (rightEye)
+      rightEye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  };
+
   return (
-    <>
-      <aside className="fixed left-6 top-1/4 flex flex-col gap-4 text-zinc-400 text-2xl bg-[#f1f5f9]/70 dark:bg-[#0f172a]/70 backdrop-blur-md p-4 rounded-xl shadow-xl transition-all duration-300">
-        <a
-          href="https://github.com/DamianToromanovic"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition-transform"
-        >
-          <FaGithub />
-        </a>
-        <a
-          href="https://linkedin.com/in/DEINNAME"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 transition-transform"
-        >
-          <FaLinkedin />
-        </a>
-      </aside>
-      <section className="h-screen flex flex-col justify-center items-center text-center px-4 bg-[#f1f5f9] dark:bg-[#0f172a] transition-colors duration-500">
-        <h1 className="text-5xl sm:text-6xl md:text-3xl font-extrabold tracking-wide text-zinc-900 dark:text-white mb-6">
-          Hey, I'm Damian 👋
-        </h1>
-        <p className="text-xl text-zinc-500 dark:text-zinc-300 max-w-xl mb-2 italic">
-          Clean code.
-        </p>
-        <p className="text-xl text-zinc-500 dark:text-zinc-300 max-w-xl mb-2 italic">
-          Scalable systems.
-        </p>
-        <p className="text-xl text-zinc-500 dark:text-zinc-300 max-w-xl mb-6 italic">
-          Purpose-driven development.
-        </p>
-        <a
-          href="/projects"
-          className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300"
-        >
-          Explore my work
-        </a>
-      </section>
-    </>
+    <section
+      id="home"
+      ref={heroRef}
+      onMouseMove={handleMouseMove}
+      className="h-screen w-full flex items-center justify-center bg-[#f1f5f9] dark:bg-[#0f172a] transition-colors duration-500 px-6"
+    >
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-6 text-center md:text-left">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white leading-tight">
+            Hi, I'm Damian
+          </h1>
+
+          <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-300 max-w-md">
+            I build modern web applications with performance, accessibility and
+            clean code in mind.
+          </p>
+
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
+            <a
+              href="https://github.com/DamianToromanovic"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
+            >
+              <FaGithub /> GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/DEINNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-blue-900 transition"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div className="flex justify-center md:justify-end">
+          <CreapyMe />
+        </div>
+      </div>
+    </section>
   );
 }
