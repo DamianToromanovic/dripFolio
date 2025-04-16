@@ -1,6 +1,8 @@
+import PeaceGreeting from "../components/PeaceGreeting";
+
 export default function About() {
   return (
-    <section className="max-w-3xl mx-auto py-20 px-6">
+    <section className=" relative max-w-3xl mx-auto py-20 px-6">
       <h2 className="text-4xl font-bold mb-6">About Me</h2>
 
       <p className="mb-4 text-lg text-zinc-300">
@@ -24,6 +26,7 @@ export default function About() {
         I'm currently leveling up my fullstack skills and working on real-world
         projects like this portfolio.
       </p>
+      <PeaceGreeting />
     </section>
   );
 }
