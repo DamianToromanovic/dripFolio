@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import MiniAbout from "../components/MiniAbout";
 import FeaturedProjects from "../components/FeaturedProjects";
 import ContactShort from "../components/ContactShort";
-import PortraitSection from "../components/PeaceGreeting";
 
 export default function Home() {
   return (

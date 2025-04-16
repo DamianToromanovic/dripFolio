@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-700 py-6 text-center text-zinc-500 text-sm">
+    <footer className=" py-6 text-center text-sm bg-[#f1f5f9] dark:bg-[#0f172a] text-zinc-600 dark:text-zinc-400 transition-colors duration-500">
       <p>
         &copy; {new Date().getFullYear()} Damian Toromanovic. All rights
         reserved.
