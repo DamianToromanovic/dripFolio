@@ -1,3 +1,22 @@
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiVite,
+  SiPostman,
+  SiNetlify,
+  SiVercel,
+} from "react-icons/si";
+
 export default function About() {
   return (
     <section className="relative min-h-screen max-w-4xl mx-auto py-24 px-6 bg-[#f1f5f9] dark:bg-[#0f172a] text-zinc-800 dark:text-zinc-200 transition-colors duration-500">
@@ -42,18 +61,41 @@ export default function About() {
 
       <div>
         <h3 className="text-2xl font-bold mb-6">🧰 Tech Stack & Tools</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-left text-base border-l-4 border-blue-500 pl-6">
-          <li>💻 HTML, CSS, JavaScript (ES6+)</li>
-          <li>⚛️ React & React Router</li>
-          <li>🎨 Tailwind CSS</li>
-          <li>🗃️ Zustand, useReducer, Context API</li>
-          <li>🧠 Node.js & Express</li>
-          <li>🍃 MongoDB & Mongoose</li>
-          <li>🔐 REST APIs, CRUD, Auth</li>
-          <li>🧪 Git & GitHub</li>
-          <li>🧰 Vite, VS Code, Postman</li>
-          <li>☁️ Netlify, Vercel, Render</li>
-          <li>📱 Responsive Design</li>
+
+        <div className="space-y-12 border-l-4 border-blue-500 pl-6">
+          <div>
+            <h4 className="text-xl font-semibold mb-4">🎨 Frontend</h4>
+            <div className="grid grid-cols-6 sm:grid-cols-8 gap-6 text-4xl text-blue-500 dark:text-blue-400 justify-items-center">
+              <FaReact title="React" />
+              <SiVite title="Vite" />
+              <SiTailwindcss title="Tailwind CSS" />
+              <FaJs title="JavaScript" />
+              <FaHtml5 title="HTML" />
+              <FaCss3Alt title="CSS" />
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4">🧠 Backend</h4>
+            <div className="grid grid-cols-4 sm:grid-cols-6 gap-6 text-4xl text-green-600 dark:text-green-400 justify-items-center">
+              <FaNodeJs title="Node.js" />
+              <SiExpress title="Express" />
+              <SiMongodb title="MongoDB" />
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-xl font-semibold mb-4">
+              🧰 Tools & Deployment
+            </h4>
+            <div className="grid grid-cols-6 sm:grid-cols-8 gap-6 text-4xl text-zinc-600 dark:text-zinc-300 justify-items-center">
+              <SiNetlify title="Netlify" />
+              <SiVercel title="Vercel" />
+              <SiPostman title="Postman" />
+              <FaGithub title="GitHub" />
+              <FaGitAlt title="Git" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
