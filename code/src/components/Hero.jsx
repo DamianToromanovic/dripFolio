@@ -1,71 +1,76 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import CreapyMe from "./CreapyMe";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Hero() {
   const heroRef = useRef(null);
+  const [showMore, setShowMore] = useState(false);
 
-  const handleMouseMove = (e) => {
-    const rect = heroRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const percentX = x / rect.width;
-    const percentY = y / rect.height;
-
-    const offsetX = (percentX - 0.5) * 12;
-    const offsetY = (percentY - 0.5) * 8;
-
-    const leftEye = document.querySelector("#left-eye");
-    const rightEye = document.querySelector("#right-eye");
-
-    if (leftEye)
-      leftEye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    if (rightEye)
-      rightEye.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-  };
+  const birthDate = new Date("1997-04-01");
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
 
   return (
     <section
       id="home"
       ref={heroRef}
-      onMouseMove={handleMouseMove}
-      className="h-screen w-full flex items-center justify-center bg-[#f1f5f9] dark:bg-[#0f172a] transition-colors duration-500 px-6"
+      className="w-full px-6 py-12 bg-[#f1f5f9] dark:bg-[#0f172a] transition-colors duration-500"
     >
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white leading-tight">
-            Hi, I'm Damian
-          </h1>
-
-          <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-300 max-w-md">
-            I build modern web applications with performance, accessibility and
-            clean code in mind.
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-2">
-            <a
-              href="https://github.com/DamianToromanovic"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"
-            >
-              <FaGithub /> GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/DEINNAME"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-blue-900 transition"
-            >
-              <FaLinkedin /> LinkedIn
-            </a>
+      <div className="max-w-md mx-auto border rounded-xl shadow-lg p-4 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white relative">
+        <div className="flex items-start justify-between">
+          <div className="flex gap-4 items-center">
+            <div className="w-16 h-16 overflow-hidden rounded-full shrink-0">
+              <img
+                src="/assets/sticker.png"
+                alt="Damian Avatar"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-lg font-bold">Damian Toromanovic</h1>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                FullStack Developer
+              </p>
+            </div>
           </div>
+
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="text-sm text-blue-600 dark:text-blue-400"
+          >
+            {showMore ? "▲" : "▼"}
+          </button>
         </div>
 
-        <div className="flex justify-center md:justify-end">
-          <CreapyMe />
-        </div>
+        {showMore && (
+          <div className="mt-4 text-sm space-y-2">
+            <p>📍 Location: Germany / Morocco</p>
+            <p>🎂 Age: {age}</p>
+            <p>✉️ Email: damian@example.com</p>
+            <hr className="border-zinc-300 dark:border-zinc-700" />
+            <div className="flex gap-4 pt-1">
+              <a
+                href="https://github.com/DamianToromanovic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                <FaGithub className="inline" /> GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/DEINNAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                <FaLinkedin className="inline" /> LinkedIn
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

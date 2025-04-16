@@ -1,4 +1,5 @@
 export default function About() {
+  // const birthDay =
   return (
     <section
       id="about"
@@ -36,7 +37,7 @@ export default function About() {
 
             <div className="font-medium">E-mail:</div>
             <div className="text-blue-600 dark:text-blue-400">
-              damian@example.com
+              d.toromanovic@web.de
             </div>
 
             <div className="font-medium">Available:</div>
