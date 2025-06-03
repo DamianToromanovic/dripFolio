@@ -21,23 +21,23 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="w-full bg-zinc-950 text-zinc-200 transition-colors duration-500"
+      className="w-full  bg-zinc-950 text-zinc-200 transition-colors duration-500"
     >
-      <div className="max-w-sm xl:max-w-md mx-auto border border-zinc-700 rounded-xl shadow-lg p-6 bg-zinc-900 text-zinc-200 relative">
+      <div className=" mx-auto border border-zinc-700 rounded-xl shadow-lg p-6 bg-zinc-900 text-zinc-200 relative">
         <div className="flex items-start justify-between">
           <div className="flex gap-4 items-center">
-            <div className="w-16 h-16 overflow-hidden rounded-full shrink-0 border-2 border-yellow-500">
+            <div className="w-32 h-32 overflow-hidden rounded-2xl shrink-0  bg-zinc-800">
               <img
                 src="/assets/sticker.png"
-                alt="Damian Avatar"
-                className="w-full h-full object-cover"
+                className="w-full object-cover"
+                alt=""
               />
             </div>
-            <div className="flex flex-col">
-              <h1 className="text-lg font-bold text-yellow-500">
-                Damian Toromanovic
-              </h1>
-              <p className="text-sm text-zinc-400">FullStack Developer</p>
+            <div className="">
+              <h1 className="text-xl font-bold ">Damian Toromanovic</h1>
+              <p className="text-sm text-zinc-400 bg-zinc-800 py-1 px-2 inline-block rounded-lg mt-2">
+                FullStack Developer
+              </p>
             </div>
           </div>
         </div>
