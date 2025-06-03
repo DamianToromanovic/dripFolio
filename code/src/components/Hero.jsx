@@ -28,19 +28,23 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="w-full  bg-zinc-950 text-zinc-200 transition-colors duration-500"
+      className="w-full  text-zinc-200 transition-colors duration-500"
     >
-      <div className=" mx-auto border border-zinc-700 rounded-2xl shadow-lg p-6 bg-[#1e1e1f] text-zinc-200 relative">
+      <div className=" mx-auto border border-my-muted rounded-2xl shadow-lg p-6 bg-my-card text-zinc-200 relative">
         <button
           className="absolute right-0 top-0 bg-[#2b2b2c] hover:bg-[#2c2c2f] p-3 rounded-tr-2xl rounded-bl-2xl"
           type="button"
           onClick={() => setShowMore(!showMore)}
         >
-          {!showMore ? <ChevronDown /> : <ChevronUp />}
+          {!showMore ? (
+            <ChevronDown className="text-my-gold" />
+          ) : (
+            <ChevronUp className="text-my-gold" />
+          )}
         </button>
         <div className="flex items-start justify-between">
           <div className="flex gap-4 items-center 2xl:flex-col">
-            <div className="w-32 h-32 overflow-hidden rounded-[20%] shrink-0  bg-zinc-800">
+            <div className="w-32 h-32 overflow-hidden rounded-[20%] shrink-0  bg-bright-gray">
               <img
                 src="/assets/sticker.png"
                 className="w-full object-cover"
@@ -49,8 +53,8 @@ export default function Hero() {
             </div>
             <div className="">
               <h1 className="text-3xl font-bold ">Damian Toromanovic</h1>
-              <p className="text-sm text-zinc-200 bg-[#2b2b2c] py-1 px-2 inline-block rounded-lg mt-4">
-                FullStack Developer
+              <p className="text-lg text-zinc-200 bg-my-muted py-1 px-2 inline-block rounded-lg mt-4">
+                Fullstack Developer
               </p>
             </div>
           </div>
@@ -58,27 +62,27 @@ export default function Hero() {
 
         {showMore && (
           <div className="mt-4 text-sm space-y-2">
-            <hr className="border-zinc-700" />
+            <hr className="border-my-muted" />
             <div className="flex gap-4 items-center">
-              <div className="p-3 bg-[#202022] rounded-xl">
+              <div className="p-3 shadow-innerShadow bg-minor-cards rounded-xl">
                 {" "}
-                <Mail className="text-[#DAA520]" />
+                <Mail className="text-my-gold" />
               </div>
 
               <div className="flex flex-col overflow-hidden">
-                <span className="text-zinc-600">EMAIL</span>
+                <span className="text-my-muted-foreground">EMAIL</span>
                 <span className="text-lg ">d.toromanovic@web.de</span>
               </div>
             </div>
 
             <div className="flex gap-4 items-center">
-              <div className="p-3 bg-[#202022] rounded-xl">
+              <div className="p-3 shadow-innerShadow bg-minor-cards rounded-xl">
                 {" "}
-                <MapPin className="text-[#DAA520]" />
+                <MapPin className="text-my-gold" />
               </div>
 
               <div className="flex flex-col mb-3">
-                <span className="text-zinc-600">Location</span>
+                <span className="text-my-muted-foreground">Location</span>
                 <span className="text-lg">Germany</span>
               </div>
             </div>
@@ -89,9 +93,9 @@ export default function Hero() {
                 href="https://github.com/DamianToromanovic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-[#202022] rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
+                className="p-3 shadow-innerShadow bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
               >
-                <Github className="text-[#DAA520]" />
+                <Github className="text-my-gold" />
                 <span className="text-lg">GitHub</span>
               </a>
 
@@ -100,9 +104,9 @@ export default function Hero() {
                 href="https://linkedin.com/in/DEINNAME"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-[#202022] rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
+                className="p-3 shadow-innerShadow  bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
               >
-                <Linkedin className="text-[#DAA520]" />
+                <Linkedin className="text-my-gold" />
                 <span className="text-lg">LinkedIn</span>
               </a>
             </div>

@@ -3,10 +3,7 @@ import Techstack from "./Techstack";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="min-h-screen py-6 px-6 text-zinc-200 transition-colors duration-500 text-xl"
-    >
+    <section className=" py-6 px-6 text-xl">
       <h1 className="text-4xl font-bold mb-8 ">About Me</h1>
 
       <p className="mb-4">

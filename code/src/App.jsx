@@ -4,13 +4,13 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <main className="min-h-screen w-full bg-zinc-950 text-zinc-200 transition-colors duration-300">
+    <main className="min-h-screen w-full bg-my-background text-zinc-200 transition-colors duration-300 ">
       <div className=" mx-auto px-4 py-12 grid grid-cols-1 2xl:grid-cols-10 gap-6">
         <div className="lg:px-20  xl:px-24 2xl:px-4 2xl:col-span-2 2xl:col-start-2">
           <Hero />
         </div>
 
-        <div className="lg:px-20 xl:px-24 2xl:col-span-6 2xl:px-12">
+        <div className="lg:px-20 xl:px-24 2xl:col-span-6 2xl:px-12 ">
           <SummaryCard />
         </div>
       </div>

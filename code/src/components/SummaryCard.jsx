@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Resume from "./Resume";
 
 export default function SummaryCard() {
   const [activeTab, setActiveTab] = useState("about");
@@ -10,6 +11,8 @@ export default function SummaryCard() {
     switch (activeTab) {
       case "about":
         return <About />;
+      case "resume":
+        return <Resume />;
       case "projects":
         return <Projects />;
       case "contact":
@@ -20,7 +23,7 @@ export default function SummaryCard() {
   };
 
   return (
-    <div className="bg-zinc-900 text-zinc-200 p-6 rounded-2xl shadow-md transition-colors duration-300 border border-zinc-700 relative">
+    <div className="bg-my-card  p-6 rounded-2xl shadow-md transition-colors duration-300 border border-my-muted relative">
       <div className="flex items-center justify-between mb-6 ">
         <div></div>
         <div className="flex gap-6 absolute px-6 rounded-tr-2xl rounded-bl-2xl top-0 right-0 bg-zinc-800">
@@ -36,8 +39,8 @@ export default function SummaryCard() {
               className={`px-3 py-2  font-medium text-xl transition 
                 ${
                   activeTab === tab.key
-                    ? "text-yellow-500   shadow"
-                    : "text-zinc-400 hover:text-yellow-300 "
+                    ? "text-my-gold   shadow"
+                    : "text-my-muted-foreground hover:text-my-gold/80 "
                 }`}
             >
               {tab.label}
