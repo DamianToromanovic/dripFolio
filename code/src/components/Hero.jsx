@@ -32,7 +32,7 @@ export default function Hero() {
     >
       <div className=" mx-auto border border-zinc-700 rounded-2xl shadow-lg p-6 bg-[#1e1e1f] text-zinc-200 relative">
         <button
-          className="absolute right-0 top-0 bg-[#2b2b2c] hover:bg-[#2c2c2f] p-3 rounded-2xl"
+          className="absolute right-0 top-0 bg-[#2b2b2c] hover:bg-[#2c2c2f] p-3 rounded-tr-2xl rounded-bl-2xl"
           type="button"
           onClick={() => setShowMore(!showMore)}
         >

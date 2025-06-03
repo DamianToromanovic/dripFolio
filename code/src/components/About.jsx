@@ -1,4 +1,5 @@
 import Services from "./Services";
+import Techstack from "./Techstack";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       id="about"
       className="min-h-screen py-6 px-6 text-zinc-200 transition-colors duration-500 text-xl"
     >
-      <h2 className="text-3xl font-bold mb-8 ">About Me</h2>
+      <h1 className="text-4xl font-bold mb-8 ">About Me</h1>
 
       <p className="mb-4">
         I’m Damian, a{" "}
@@ -28,6 +29,8 @@ export default function About() {
       <h2 className="text-3xl font-bold mb-8 ">What i offer</h2>
 
       <Services />
+      <h2 className="text-3xl font-bold mb-8 mt-12">My Tech Stack</h2>
+      <Techstack />
     </section>
   );
 }
