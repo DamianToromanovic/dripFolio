@@ -20,23 +20,24 @@ export default function SummaryCard() {
   };
 
   return (
-    <div className="bg-zinc-900 text-zinc-200 p-6 rounded-xl shadow-md transition-colors duration-300 border border-zinc-700">
-      <div className="flex items-center justify-between mb-6">
-        <h2 className="text-lg font-semibold text-yellow-500">Section</h2>
-        <div className="flex gap-2">
+    <div className="bg-zinc-900 text-zinc-200 p-6 rounded-xl shadow-md transition-colors duration-300 border border-zinc-700 relative">
+      <div className="flex items-center justify-between mb-6 ">
+        <div></div>
+        <div className="flex gap-6 absolute  top-0 right-0 bg-zinc-800">
           {[
             { key: "about", label: "About" },
+            { key: "resume", label: "Resume" },
             { key: "projects", label: "Projects" },
             { key: "contact", label: "Contact" },
           ].map((tab) => (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`px-3 py-2 rounded-md font-medium text-sm transition
+              className={`px-3 py-2  font-medium text-xl transition 
                 ${
                   activeTab === tab.key
-                    ? "text-yellow-500 bg-zinc-800 ring-1 ring-yellow-500 shadow"
-                    : "text-zinc-400 bg-zinc-700 hover:bg-zinc-600"
+                    ? "border-b-2 border-b-yellow-500   shadow hover:bg-zinc-600"
+                    : "text-zinc-400  hover:bg-zinc-600"
                 }`}
             >
               {tab.label}
