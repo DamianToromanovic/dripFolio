@@ -43,7 +43,7 @@ export default function Techstack() {
       {techs.map((tech) => (
         <div
           key={tech.label}
-          className="flex flex-col items-center gap-4 p-3 rounded-xl bg-my-muted border-2 border-minor-cards shadow transition-transform duration-150 hover:scale-110"
+          className="flex flex-col items-center gap-4 p-3 rounded-xl bg-my-muted border-2 border-minor-cards shadow transition-transform duration-150 hover:scale-110 lg:hover:scale-105"
         >
           <span className="text-5xl">{tech.icon}</span>
           <span className="text-sm lg:text-lg font-semibold ">
