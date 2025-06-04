@@ -1,0 +1,18 @@
+export const techs = [
+  { label: "JavaScript", icon: "FaJs", color: "text-yellow-400" },
+  { label: "TypeScript", icon: "SiTypescript", color: "text-blue-400" },
+  { label: "React", icon: "FaReact", color: "text-cyan-400" },
+  { label: "Next.js", icon: "SiNextdotjs", color: "text-white" },
+  { label: "Node.js", icon: "FaNodeJs", color: "text-green-600" },
+  { label: "Express.js", icon: "FaNodeJs", color: "text-gray-700" },
+  { label: "MongoDB", icon: "SiMongodb", color: "text-green-500" },
+  { label: "Supabase", icon: "SiSupabase", color: "text-green-400" },
+  { label: "TailwindCSS", icon: "SiTailwindcss", color: "text-cyan-300" },
+  { label: "HTML5", icon: "FaHtml5", color: "text-orange-400" },
+  { label: "CSS3", icon: "FaCss3Alt", color: "text-blue-500" },
+  { label: "Git/GitHub", icon: "FaGitAlt", color: "text-orange-500" },
+  { label: "Linux", icon: "FaLinux", color: "text-gray-200" },
+  { label: "npm", icon: "FaNpm", color: "text-red-600" },
+  { label: "VSCode", icon: "DiVisualstudio", color: "text-blue-500" },
+  { label: "Vercel", icon: "SiVercel", color: "text-white" },
+];
