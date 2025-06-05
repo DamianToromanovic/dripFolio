@@ -27,12 +27,12 @@ export default function Services() {
       ].map((service, i) => (
         <div
           key={i}
-          className="p-5 rounded-lg bg-minor-cards text-zinc-200 transition-all shadow-innerShadow flex  gap-2 lg:flex-row items-center text-center lg:gap-6 lg:text-left"
+          className="p-5 rounded-lg bg-minor-cards  transition-all shadow-innerShadow flex  gap-2 lg:flex-row items-center text-center lg:gap-6 lg:text-left"
         >
           <div className="text-5xl text-[#D7AA58] mb-3">{service.icon}</div>
           <div>
             <h3 className="text-2xl font-bold mb-1">{service.title}</h3>
-            <p className="text-lg text-zinc-400">{service.desc}</p>
+            <p className="text-lg text-my-muted-foreground">{service.desc}</p>
           </div>
         </div>
       ))}

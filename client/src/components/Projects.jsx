@@ -11,11 +11,11 @@ export default function Projects() {
   return (
     <section className="py-6 px-6 text-xl min-h-screen 3xl:px-20">
       <h1 className="font-bold mb-8 text-4xl">Projects</h1>
-      <div className="flex flex-col gap-10 md:px-4 ">
+      <div className="flex flex-col gap-10 md:px-4">
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="bg-my-card rounded-2xl p-6 shadow border border-my-muted xl:w-[90%] lg:px-12 mx-auto"
+            className="bg-minor-cards shadow-innerShadow rounded-2xl p-6 xl:w-[90%] lg:px-12 mx-auto"
           >
             {/* Bild */}
 
@@ -48,7 +48,7 @@ export default function Projects() {
                   return (
                     <span
                       key={i}
-                      className={`inline-flex items-center gap-4 cursor-pointer rounded-xl  p-3 bg-my-muted hadow transition-transform duration-150 hover:scale-110 lg:hover:scale-105 text-base font-medium mr-2 mb-2 ${
+                      className={`inline-flex items-center gap-4 cursor-pointer rounded-xl  p-3 bg-my-muted hadow transition-transform duration-150 hover:scale-110 lg:hover:scale-105 shadow-innerShadow text-base font-medium mr-2 mb-2 ${
                         t.color || ""
                       }`}
                     >
@@ -85,9 +85,9 @@ export default function Projects() {
                     href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline hover:text-my-gold"
+                    className="inline-block px-6 py-2 text-base rounded-2xl   text-my-gold  hover:scale-110 transition-colors duration-200  shadow-innerShadow mt-3"
                   >
-                    Check my Github Profile
+                    Github
                   </a>
                 )}
                 {project.liveDemo && (
