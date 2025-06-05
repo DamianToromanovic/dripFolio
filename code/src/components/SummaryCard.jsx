@@ -26,7 +26,7 @@ export default function SummaryCard() {
     <div className="bg-my-card  p-6 rounded-2xl shadow-md transition-colors duration-300 border border-my-muted relative">
       <div className="flex items-center justify-between mb-6 ">
         <div></div>
-        <div className="flex gap-6 absolute px-6 rounded-tr-2xl rounded-bl-2xl top-0 right-0 bg-zinc-800">
+        <div className="flex gap-6 absolute px-6 rounded-tr-2xl rounded-bl-2xl top-0 right-0 bg-my-muted">
           {[
             { key: "about", label: "About" },
             { key: "resume", label: "Resume" },

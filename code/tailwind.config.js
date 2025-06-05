@@ -20,6 +20,9 @@ export default {
         innerShadow: "inset 3px 3px 9px -10px",
         hoverShadow: "4px 4px 10px -10px",
       },
+      screens: {
+        "3xl": "1800px",
+      },
     },
   },
   plugins: [],

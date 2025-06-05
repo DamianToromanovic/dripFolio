@@ -30,7 +30,6 @@ export const webshop = {
     "/images/webshop/screen5.png",
   ],
   repo: "https://github.com/DamianToromanovic/ecommerce",
-  liveDemo: "https://ecommerce-damiantoromanovics-projects.vercel.app",
 
   structure: [
     "App folder structure with dynamic routing for categories and products",
@@ -44,14 +43,14 @@ export const projectManager = {
   title: "TaskNestor",
   description:
     "A modular project management tool with context-based AI-Support for organizing projects, tracking tasks, taking notes, and collaborating in teams. Built for flexibility, extensibility, and real-world workflow needs.",
-  year: 2024,
+  year: 2025,
   techStack: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Supabase",
-    "React Hooks",
-    "Shadcn/ui",
+    { label: "Next.js", icon: "SiNextdotjs", color: "text-white" },
+    { label: "TypeScript", icon: "SiTypescript", color: "text-blue-400" },
+    { label: "TailwindCSS", icon: "SiTailwindcss", color: "text-cyan-300" },
+    { label: "Supabase", icon: "SiSupabase", color: "text-green-400" },
+
+    { label: "shadCn", icon: "SiShadcnui" },
   ],
   features: [
     "Project dashboard with tab navigation (overview, tasks, notes, team)",
@@ -77,8 +76,8 @@ export const projectManager = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  repo: "https://github.com/DamianToromanovic/project-planning-tool",
-  liveDemo: "https://projecttool-demo.vercel.app",
+  repo: "https://github.com/DamianToromanovic/llama-project-assist",
+
   status: "in progress",
   structure: [
     "App structure with modular feature tabs",
@@ -93,12 +92,11 @@ export const orderDigitization = {
     "A digital ordering system for restaurants with separate interfaces for guests and staff. Guests can order via QR code at their table, while staff manage orders and table statuses in a dedicated admin view.",
   year: 2024,
   techStack: [
-    "React",
-    "Next.js",
-    "Tailwind CSS",
-    "Zustand",
-    "Lucide Icons",
-    "Shadcn/ui",
+    { label: "React", icon: "FaReact", color: "text-cyan-400" },
+    { label: "Next.js", icon: "SiNextdotjs", color: "text-white" },
+    { label: "TailwindCSS", icon: "SiTailwindcss", color: "text-cyan-300" },
+
+    { label: "shadCn", icon: "SiShadcnui" },
   ],
   features: [
     "Customer frontend for viewing the menu and placing orders via QR code",
@@ -118,13 +116,7 @@ export const orderDigitization = {
     "/images/webshop/screen5.png",
   ],
   status: "mvp",
-  // repo: "https://github.com/dein-user/order-digitization",
-  // liveDemo: "https://orderapp-demo.vercel.app",
-  openPoints: [
-    "Integrate real-time order notifications for kitchen staff",
-    "Add analytics for sales and order trends",
-    "Enable multi-language support for the customer interface",
-  ],
+
   structure: [
     "Separate frontend codebases for customers and staff",
     "Reusable component structure for menu, cart, and order handling",
