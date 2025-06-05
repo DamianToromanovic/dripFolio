@@ -18,10 +18,9 @@ export const webshop = {
     "Product detail views with description, image, price, and 'add to cart' button",
     "Search functionality with live suggestions and results page",
     "Fully responsive design for desktop, tablet, and mobile",
-    "Modular, reusable components (product card, sidebar, navbar, product grid, etc.)",
+    "Modular, reusable components",
   ],
-  myRole:
-    "Designed and implemented the complete frontend architecture, created all major components, and ensured modularity and responsiveness. Responsible for the entire UI/UX concept and state management.",
+
   images: [
     "/images/webshop/screen1.png",
     "/images/webshop/screen2.png",
@@ -29,18 +28,11 @@ export const webshop = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  repo: "https://github.com/DamianToromanovic/ecommerce",
-
-  structure: [
-    "App folder structure with dynamic routing for categories and products",
-    "Reusable UI components",
-    "Static data in lib/",
-    "Optimized public asset usage for images",
-  ],
+  repo: "https://github.com/DamianToromanovic/",
 };
 
 export const projectManager = {
-  title: "TaskNestor",
+  title: "Task-Manager",
   description:
     "A modular project management tool with context-based AI-Support for organizing projects, tracking tasks, taking notes, and collaborating in teams. Built for flexibility, extensibility, and real-world workflow needs.",
   year: 2025,
@@ -60,30 +52,11 @@ export const projectManager = {
     "Real-time data sync with Supabase",
     "Modular architecture for easy feature extension",
   ],
-  openPoints: [
-    "Implement calendar and event scheduling per user",
-    "Add notifications for deadlines and task updates",
-    "Enhance access control and permissions for teams",
-    "Integrate AI-powered assistant for meeting summaries",
-    "Mobile optimization and offline mode",
-  ],
-  myRole:
-    "Architected the application structure, designed the UI, and implemented all core features. Focused on modularity, clean state management, and database integration.",
-  images: [
-    "/images/webshop/screen1.png",
-    "/images/webshop/screen2.png",
-    "/images/webshop/screen3.png",
-    "/images/webshop/screen4.png",
-    "/images/webshop/screen5.png",
-  ],
-  repo: "https://github.com/DamianToromanovic/llama-project-assist",
+
+  images: ["/images/project-manager/screen2.png"],
+  repo: "https://github.com/DamianToromanovic/",
 
   status: "in progress",
-  structure: [
-    "App structure with modular feature tabs",
-    "Database schema in Supabase",
-    "Reusable components for tasks, notes, teams",
-  ],
 };
 
 export const orderDigitization = {
@@ -106,8 +79,7 @@ export const orderDigitization = {
     "Responsive design optimized for mobile and tablet",
     "Modular architecture for easy expansion (e.g., analytics, kitchen display)",
   ],
-  myRole:
-    "Solely responsible for designing and implementing both the customer and staff frontends, including all UI components, navigation flows, and responsive layouts.",
+
   images: [
     "/images/webshop/screen1.png",
     "/images/webshop/screen2.png",
@@ -116,12 +88,7 @@ export const orderDigitization = {
     "/images/webshop/screen5.png",
   ],
   status: "mvp",
-
-  structure: [
-    "Separate frontend codebases for customers and staff",
-    "Reusable component structure for menu, cart, and order handling",
-    "State management with Zustand for real-time order status",
-  ],
+  repo: "https://github.com/DamianToromanovic/",
 };
 
 export const projects = [webshop, projectManager, orderDigitization];
