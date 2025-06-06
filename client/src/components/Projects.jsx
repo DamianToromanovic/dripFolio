@@ -19,11 +19,11 @@ export default function Projects() {
           >
             {/* Bild */}
 
-            <img
+            {/* <img
               src={project.images?.[0]}
               alt={project.title}
               className="w-full  object-cover rounded-xl mb-6 "
-            />
+            /> */}
 
             {/* content-box */}
             <div className="">
