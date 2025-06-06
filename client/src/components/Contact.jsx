@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const initialForm = {
   name: "",
@@ -9,30 +10,32 @@ const initialForm = {
 
 export default function Contact() {
   const [form, setForm] = useState(initialForm);
-
-  const [success, setSuccess] = useState(null);
+  const [status, setStatus] = useState("idle");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("loading");
 
     try {
       const res = await fetch("http://localhost:5500/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
 
       const data = await res.json();
-      setSuccess(data.success);
 
       if (data.success) {
+        setStatus("success");
         setForm(initialForm);
+      } else {
+        setStatus("error");
       }
     } catch (error) {
-      setSuccess(false);
+      setStatus("error");
     }
+
+    setTimeout(() => setStatus("idle"), 4000);
   };
 
   return (
@@ -76,12 +79,40 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="col-span-1 sm:col-span-2 bg-minor-cards py-3 rounded-md mt-4 shadow-innerShadow font-semibold transition-all"
+            disabled={status === "loading"}
+            className={`col-span-1 sm:col-span-2 bg-minor-cards py-3 rounded-md mt-4 shadow-innerShadow font-semibold transition-all
+    ${status === "loading" ? "opacity-50 cursor-not-allowed" : ""}
+  `}
           >
-            Send Message
+            {status === "loading" ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
+      <AnimatePresence>
+        {status === "success" && (
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
+            className="text-green-500 font-medium mt-4 text-center col-span-2"
+          >
+            ✅ Your message was sent successfully!
+          </motion.p>
+        )}
+
+        {status === "error" && (
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4 }}
+            className="text-red-500 font-medium mt-4 text-center col-span-2"
+          >
+            ❌ Something went wrong. Please try again.
+          </motion.p>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
