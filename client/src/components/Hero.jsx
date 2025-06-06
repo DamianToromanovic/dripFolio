@@ -7,6 +7,7 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import "flag-icons/css/flag-icons.min.css";
 
 export default function Hero() {
   const heroRef = useRef(null);
@@ -109,6 +110,27 @@ export default function Hero() {
                 <Linkedin className="text-my-gold" />
                 <span className="text-lg">LinkedIn</span>
               </a>
+            </div>
+            <hr className="border-my-muted " />
+            <p className="text-my-muted-foreground text-lg ">My Languages</p>
+            <div className=" grid grid-cols-2 gap-2">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+                <span class="fi fi-de text-2xl"></span>
+                <span className="text-lg italic">German</span>{" "}
+              </div>
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+                <span class="fi fi-gb text-2xl"></span>
+                <span className="text-lg italic">English</span>
+              </div>
+              <div className="flex gap-2 bg-minor-cards shadow-innerShadow rounded-xl p-3">
+                <span class="fi fi-ba text-2xl"></span>
+                <span className="text-lg italic">Bosnian</span>
+              </div>
+
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+                <span class="fi fi-sa text-2xl"></span>
+                <span className="text-lg italic">Arabic</span>
+              </div>
             </div>
           </div>
         )}
