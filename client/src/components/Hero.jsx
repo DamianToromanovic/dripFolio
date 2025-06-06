@@ -44,7 +44,7 @@ export default function Hero() {
           )}
         </button>
         <div className="flex items-start justify-between">
-          <div className="flex gap-4 items-center 2xl:flex-col">
+          <div className="flex gap-4 items-center 3xl:flex-col">
             <div className="w-32 h-32 overflow-hidden rounded-[20%] shrink-0  bg-bright-gray">
               <img
                 src="/assets/sticker.png"
@@ -113,21 +113,21 @@ export default function Hero() {
             </div>
             <hr className="border-my-muted " />
             <p className="text-my-muted-foreground text-lg ">My Languages</p>
-            <div className=" grid grid-cols-2 gap-2">
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+            <div className=" flex  gap-2 3xl:grid 3xl:grid-cols-2">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
                 <span class="fi fi-de text-2xl"></span>
                 <span className="text-lg italic">German</span>{" "}
               </div>
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
                 <span class="fi fi-gb text-2xl"></span>
                 <span className="text-lg italic">English</span>
               </div>
-              <div className="flex gap-2 bg-minor-cards shadow-innerShadow rounded-xl p-3">
+              <div className="flex gap-2 bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
                 <span class="fi fi-ba text-2xl"></span>
                 <span className="text-lg italic">Bosnian</span>
               </div>
 
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
                 <span class="fi fi-sa text-2xl"></span>
                 <span className="text-lg italic">Arabic</span>
               </div>
