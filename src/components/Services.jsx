@@ -29,7 +29,9 @@ export default function Services() {
           key={i}
           className="p-5 rounded-lg bg-minor-cards  transition-all shadow-innerShadow flex  gap-2 lg:flex-row items-center text-center lg:gap-6 lg:text-left"
         >
-          <div className="sm:text-5xl  text-[#D7AA58] mb-3">{service.icon}</div>
+          <div className="text-5xl hidden sm:block  text-[#D7AA58] mb-3">
+            {service.icon}
+          </div>
           <div>
             <h3 className="sm:text-2xl text-lg font-semibold sm:font-bold mb-1">
               {service.title}

@@ -17,7 +17,7 @@ export default function Techstack() {
             <span className={`text-5xl ${tech.color}`}>
               {IconComponent && <IconComponent />}
             </span>
-            <span className="text-sm lg:text-lg font-semibold ">
+            <span className="text-xs sm:text-sm lg:text-lg font-semibold ">
               {tech.label}
             </span>
           </div>
