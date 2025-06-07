@@ -30,14 +30,18 @@ export default function Projects() {
               {/* Titel und Jahr */}
 
               <div className="flex items-center justify-between mb-4">
-                <h2 className="font-bold text-3xl">{project.title}</h2>
-                <span className="text-my-gold font-bold">{project.year}</span>
+                <h2 className="font-bold text-xl sm:text-2xl md:text-3xl">
+                  {project.title}
+                </h2>
+                <span className="text-my-gold text-base font-bold">
+                  {project.year}
+                </span>
               </div>
-              <span className="inline-block py-2 px-6 bg-minor-cards shadow-innerShadow rounded-2xl mb-4">
+              <span className="inline-block py-2 px-6 bg-minor-cards shadow-innerShadow text-base sm:text-xl rounded-2xl mb-4">
                 {project.status}
               </span>
               {/* Beschreibung */}
-              <p className="text-lg italic text-my-muted-foreground mb-4 3xl:w-1/2">
+              <p className="sm:text-lg text-sm italic text-my-muted-foreground mb-4 3xl:w-1/2">
                 {project.description}
               </p>
 
@@ -53,7 +57,7 @@ export default function Projects() {
                       }`}
                     >
                       {IconComponent && (
-                        <IconComponent className="inline-block text-3xl" />
+                        <IconComponent className="inline-block text-xl sm:text-3xl" />
                       )}
                       {t.label}
                     </span>
@@ -62,7 +66,7 @@ export default function Projects() {
               </div>
 
               {/* Features */}
-              <h2 className="text-2xl font-semibold mb-4 inline-block border-b-my-gold border-b-4">
+              <h2 className="sm:text-2xl  font-semibold mb-4 inline-block border-b-my-gold border-b-4">
                 Features
               </h2>
               {project.features && (
@@ -72,7 +76,7 @@ export default function Projects() {
                       <span className="w-2 h-2 rounded-full inline-block bg-my-gold">
                         {" "}
                       </span>{" "}
-                      <span className="">{f}</span>
+                      <span className="text-sm sm:text-lg md:text-xl">{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -85,9 +89,9 @@ export default function Projects() {
                     href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-2 text-base rounded-2xl   text-my-gold  hover:scale-110 transition-colors duration-200  shadow-innerShadow mt-3"
+                    className="inline-block px-6 py-2 text-sm sm:text-base font-semibold rounded-lg text-my-gold border border-my-gold hover:bg-my-gold hover:text-black transition-all duration-200 shadow-md mt-3"
                   >
-                    Github
+                    GitHub
                   </a>
                 )}
                 {project.liveDemo && (
