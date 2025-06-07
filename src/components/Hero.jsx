@@ -45,7 +45,7 @@ export default function Hero() {
         </button>
         <div className="flex items-start justify-between">
           <div className="flex gap-4 items-center 3xl:flex-col">
-            <div className="w-32 h-32 overflow-hidden rounded-[20%] shrink-0  bg-bright-gray">
+            <div className="w-20 h-20 sm:w-32 sm:h-32 overflow-hidden rounded-[20%] shrink-0  bg-bright-gray">
               <img
                 src="/assets/sticker.png"
                 className="w-full object-cover"
@@ -53,8 +53,10 @@ export default function Hero() {
               />
             </div>
             <div className="">
-              <h1 className="text-3xl font-bold ">Damian Toromanovic</h1>
-              <p className="text-lg text-zinc-200 bg-my-muted py-1 px-2 inline-block rounded-lg mt-4">
+              <h1 className="text-lg sm:text-2xl md:text-3xl font-bold ">
+                Damian Toromanovic
+              </h1>
+              <p className="text-sm text-zinc-200 bg-my-muted py-1 px-2 inline-block sm:text-xl rounded-lg mt-4">
                 Fullstack Developer
               </p>
             </div>
@@ -97,7 +99,7 @@ export default function Hero() {
                 className="p-3 shadow-innerShadow bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
               >
                 <Github className="text-my-gold" />
-                <span className="text-lg">GitHub</span>
+                <span className="text-sm sm:text:lg">GitHub</span>
               </a>
 
               {/* LinkedIn */}
@@ -108,26 +110,26 @@ export default function Hero() {
                 className="p-3 shadow-innerShadow  bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
               >
                 <Linkedin className="text-my-gold" />
-                <span className="text-lg">LinkedIn</span>
+                <span className="text-sm sm:text:lg">LinkedIn</span>
               </a>
             </div>
             <hr className="border-my-muted " />
             <p className="text-my-muted-foreground text-lg ">My Languages</p>
-            <div className=" flex  gap-2 3xl:grid 3xl:grid-cols-2 ">
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
+            <div className=" md:flex grid  grid-cols-2 gap-2 3xl:grid 3xl:grid-cols-2 ">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 md:max-w-56">
                 <span class="fi fi-de text-2xl"></span>
                 <span className="text-lg italic">German</span>{" "}
               </div>
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 md:max-w-56">
                 <span class="fi fi-gb text-2xl"></span>
                 <span className="text-lg italic">English</span>
               </div>
-              <div className="flex gap-2 bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
+              <div className="flex gap-2 bg-minor-cards shadow-innerShadow rounded-xl p-3 md:max-w-56">
                 <span class="fi fi-ba text-2xl"></span>
                 <span className="text-lg italic">Bosnian</span>
               </div>
 
-              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
+              <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 md:max-w-56">
                 <span class="fi fi-sa text-2xl"></span>
                 <span className="text-lg italic">Arabic</span>
               </div>
