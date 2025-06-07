@@ -10,7 +10,7 @@ function getIconComponent(icon) {
 export default function Projects() {
   return (
     <section className="py-6 px-6 text-xl min-h-screen 3xl:px-20">
-      <h1 className="font-bold mb-8 text-4xl">Projects</h1>
+      <h1 className="font-bold mb-8 text-2xl sm:text-4xl">Projects</h1>
       <div className="flex flex-col gap-10 md:px-4">
         {projects.map((project, idx) => (
           <div

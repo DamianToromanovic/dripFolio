@@ -4,7 +4,7 @@ import Techstack from "./Techstack";
 export default function About() {
   return (
     <section className=" py-6 px-6 text-xl">
-      <h1 className="text-4xl font-bold mb-8 ">About Me</h1>
+      <h1 className="text-2xl sm:text-4xl font-bold mb-8 ">About Me</h1>
 
       <p className="mb-4">
         I’m Damian, a{" "}

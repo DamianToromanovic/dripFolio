@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <section className="py-24 px-6 min-h-screen">
       <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-4xl font-bold  mb-4">Contact me</h2>
+        <h1 className="text-2xl sm:text-4xl font-bold  mb-4">Contact me</h1>
         <p className="text-my-muted-foreground">
           Have a question or want to work together? Let’s connect!
         </p>

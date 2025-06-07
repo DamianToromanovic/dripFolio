@@ -7,14 +7,14 @@ import { internshipSkills } from "../lib/skills";
 export default function Resume() {
   return (
     <section className=" py-6 px-6 text-xl">
-      <h1 className="font-bold mb-8 text-4xl">Resume</h1>
+      <h1 className="font-bold mb-8 text-2xl sm:text-4xl">Resume</h1>
       <div>
         {/* education icon plus titel*/}
         <div className="flex gap-6 items-center mb-6">
           <div className="p-3 shadow-innerShadow bg-minor-cards rounded-xl">
             <IoBookOutline className="text-my-gold" />
           </div>
-          <h2 className="text-2xl font-bold">Education</h2>
+          <h2 className="sm:text-2xl font-bold">Education</h2>
         </div>
 
         {/* education stationen-box*/}

@@ -2,7 +2,7 @@ import { FaCode, FaServer, FaDatabase, FaTools } from "react-icons/fa";
 
 export default function Services() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-6">
       {[
         {
           icon: <FaCode />,
@@ -29,10 +29,14 @@ export default function Services() {
           key={i}
           className="p-5 rounded-lg bg-minor-cards  transition-all shadow-innerShadow flex  gap-2 lg:flex-row items-center text-center lg:gap-6 lg:text-left"
         >
-          <div className="text-5xl text-[#D7AA58] mb-3">{service.icon}</div>
+          <div className="sm:text-5xl  text-[#D7AA58] mb-3">{service.icon}</div>
           <div>
-            <h3 className="text-2xl font-bold mb-1">{service.title}</h3>
-            <p className="text-lg text-my-muted-foreground">{service.desc}</p>
+            <h3 className="sm:text-2xl text-lg font-semibold sm:font-bold mb-1">
+              {service.title}
+            </h3>
+            <p className="sm:text-lg text-sm text-my-muted-foreground">
+              {service.desc}
+            </p>
           </div>
         </div>
       ))}
