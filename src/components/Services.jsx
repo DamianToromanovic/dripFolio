@@ -33,7 +33,7 @@ export default function Services() {
             {service.icon}
           </div>
           <div>
-            <h3 className="sm:text-2xl text-lg font-semibold sm:font-bold mb-1">
+            <h3 className="sm:text-2xl text-my-gold sm:text-my-foreground text-lg font-semibold sm:font-bold mb-1">
               {service.title}
             </h3>
             <p className="sm:text-lg text-sm text-my-muted-foreground">

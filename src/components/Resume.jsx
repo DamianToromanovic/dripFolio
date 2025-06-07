@@ -34,7 +34,7 @@ export default function Resume() {
                   <span className="w-2 h-2 rounded-full inline-block bg-my-gold">
                     {" "}
                   </span>{" "}
-                  <span className="">{skill}</span>
+                  <span className="text-sm sm:text-lg md:text-xl">{skill}</span>
                 </li>
               ))}
             </ul>
@@ -47,7 +47,7 @@ export default function Resume() {
             <p className="my-4 text-my-gold">2010-2017</p>
             <div className="text-my-muted-foreground flex items-center gap-3 mb-2 pl-6">
               <span className="w-2 h-2 rounded-full inline-block bg-my-gold"></span>{" "}
-              <span>
+              <span className="text-sm sm:text-lg md:text-xl">
                 Advanced technical college entrance qualification (Fachabitur)
               </span>
             </div>
@@ -79,7 +79,7 @@ export default function Resume() {
                 <span className="w-2 h-2 rounded-full inline-block bg-my-gold">
                   {" "}
                 </span>{" "}
-                <span className="">{skill}</span>
+                <span className="text-sm sm:text-lg md:text-xl">{skill}</span>
               </li>
             ))}
           </ul>
@@ -103,7 +103,7 @@ export default function Resume() {
                 <span className="w-2 h-2 rounded-full inline-block bg-my-gold">
                   {" "}
                 </span>{" "}
-                <span className="">{skill}</span>
+                <span className="text-sm sm:text-lg md:text-xl">{skill}</span>
               </li>
             ))}
           </ul>
