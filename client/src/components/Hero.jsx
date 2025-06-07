@@ -113,7 +113,7 @@ export default function Hero() {
             </div>
             <hr className="border-my-muted " />
             <p className="text-my-muted-foreground text-lg ">My Languages</p>
-            <div className=" flex  gap-2 3xl:grid 3xl:grid-cols-2">
+            <div className=" flex  gap-2 3xl:grid 3xl:grid-cols-2 ">
               <div className="flex gap-2  bg-minor-cards shadow-innerShadow rounded-xl p-3 max-w-56">
                 <span class="fi fi-de text-2xl"></span>
                 <span className="text-lg italic">German</span>{" "}

@@ -17,11 +17,14 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      const res = await fetch("http://localhost:5500/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const res = await fetch(
+        "https://render.com/docs/web-services#port-binding",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(form),
+        }
+      );
 
       const data = await res.json();
 
@@ -80,7 +83,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className={`col-span-1 sm:col-span-2 bg-minor-cards py-3 rounded-md mt-4 shadow-innerShadow font-semibold transition-all
+            className={`col-span-1 sm:col-span-2 bg-minor-cards py-3 rounded-md mt-4 mx-auto shadow-innerShadow w-[90%] font-semibold transition-all
     ${status === "loading" ? "opacity-50 cursor-not-allowed" : ""}
   `}
           >
