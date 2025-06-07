@@ -12,6 +12,8 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log("Versuche zu senden...");
+
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: parseInt(process.env.EMAIL_PORT),
@@ -22,18 +24,20 @@ export default async function handler(req, res) {
       },
     });
 
-    await transporter.sendMail({
+    console.log("Transporter erstellt.");
+
+    const info = await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.EMAIL_RECEIVER,
       subject: "Neue Nachricht vom Portfolio",
       text: message,
     });
 
-    return res
-      .status(200)
-      .json({ success: true, message: "Nachricht gesendet." });
+    console.log("E-Mail gesendet:", info);
+
+    return res.status(200).json({ message: "Nachricht gesendet" });
   } catch (err) {
-    console.error("Fehler beim Mailversand:", err);
-    return res.status(500).json({ message: "Serverfehler beim Senden." });
+    console.error("❌ Fehler beim Senden:", err);
+    return res.status(500).json({ error: err.message });
   }
 }
