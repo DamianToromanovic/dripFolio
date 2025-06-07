@@ -17,14 +17,11 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      const res = await fetch(
-        "https://render.com/docs/web-services#port-binding",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
+      const res = await fetch("https://form-portfolio.onrender.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
       const data = await res.json();
 
