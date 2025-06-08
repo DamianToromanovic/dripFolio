@@ -1,6 +1,6 @@
 export const webshop = {
-  status: "finished",
-  title: "Modern E-Commerce Frontend",
+  status: "mvp-1",
+  title: "Webshop Frontend",
   description:
     "A fully responsive and modern e-commerce frontend built with Next.js and Tailwind CSS. The goal is to deliver an appealing shop experience with smooth navigation, filter features, and a functional shopping cart.",
   year: 2025,
@@ -28,7 +28,7 @@ export const webshop = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  repo: "https://github.com/DamianToromanovic/",
+  repo: "https://github.com/DamianToromanovic/ecommerce",
 };
 
 export const projectManager = {
@@ -54,13 +54,13 @@ export const projectManager = {
   ],
 
   images: ["/images/project-manager/screen2.png"],
-  repo: "https://github.com/DamianToromanovic/",
+  repo: "https://github.com/DamianToromanovic/llama-project-assist",
 
   status: "in progress",
 };
 
 export const orderDigitization = {
-  title: "Restaurant Order Digitization",
+  title: "Food Order App",
   description:
     "A digital ordering system for restaurants with separate interfaces for guests and staff. Guests can order via QR code at their table, while staff manage orders and table statuses in a dedicated admin view.",
   year: 2024,
@@ -87,8 +87,8 @@ export const orderDigitization = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  status: "mvp",
-  repo: "https://github.com/DamianToromanovic/",
+  status: "mvp-1",
+  repo: "https://github.com/BurnoutStudio",
 };
 
 export const projects = [webshop, projectManager, orderDigitization];
