@@ -35,7 +35,9 @@ export default async function handler(req, res) {
 
     console.log("E-Mail gesendet:", info);
 
-    return res.status(200).json({ message: "Nachricht gesendet" });
+    return res
+      .status(200)
+      .json({ success: true, message: "Nachricht gesendet" });
   } catch (err) {
     console.error("❌ Fehler beim Senden:", err);
     return res.status(500).json({ error: err.message });
