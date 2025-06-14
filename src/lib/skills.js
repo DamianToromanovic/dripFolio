@@ -33,3 +33,11 @@ export const internshipSkills = [
   "Assisting and communicating with customers",
   "Coordinating schedules and handling correspondence",
 ];
+export const inovaSkills = [
+  "Took ownership of the entire frontend",
+  "Worked in close collaboration with backend",
+  "Helped shape the product from scratch",
+  "Contributed to internal decisions and planning",
+  "Organized tasks and priorities in sprints",
+  "Delivered features under tight internal deadlines",
+];

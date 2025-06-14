@@ -1,8 +1,8 @@
-import React from "react";
 import { IoBookOutline } from "react-icons/io5";
 import { skills } from "../lib/skills";
 import { softskills } from "../lib/skills";
 import { internshipSkills } from "../lib/skills";
+import { inovaSkills } from "../lib/skills";
 
 export default function Resume() {
   return (
@@ -59,6 +59,29 @@ export default function Resume() {
             <IoBookOutline className="text-my-gold" />
           </div>
           <h2 className="sm:text-2xl font-bold">Experience</h2>
+        </div>
+
+        {/* inovasiklls box */}
+        <div>
+          <h3 className="text-lg sm:text-xl font-semibold mt-6">
+            Frontend Developer
+            <br />
+            <p className="sm:text-lg text-base font-light text-my-muted-foreground mt-1 italic">
+              In collaboration with a small founder team (Inova Digital)
+            </p>
+          </h3>
+          <p className="my-6 text-my-gold">Since 04/2025</p>
+          <ul className="mt-4 pl-6">
+            {inovaSkills.map((skill, index) => (
+              <li
+                className="text-my-muted-foreground flex items-center gap-3 mb-2"
+                key={index}
+              >
+                <span className="w-2 h-2 rounded-full inline-block bg-my-gold"></span>{" "}
+                <span className="text-sm sm:text-lg md:text-xl">{skill}</span>
+              </li>
+            ))}
+          </ul>
         </div>
         {/* hagen */}
         <div>
