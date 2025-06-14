@@ -34,10 +34,10 @@ export const internshipSkills = [
   "Coordinating schedules and handling correspondence",
 ];
 export const inovaSkills = [
-  "Developing two separate frontends (admin and customer) with Next.js, Zustand and TailwindCSS",
-  "Structuring a complex state management system for orders, tables, sessions and cart logic",
-  "Collaborating closely with the backend developer (NestJS, PostgreSQL, Swagger API)",
-  "Contributing ideas to improve the system and data structure",
-  "Laying the foundation for a multilingual app on both UI and database level",
-  "Working with agile methods: sprints, Kanban board, and internal deadlines",
+  "Took ownership of the entire frontend",
+  "Worked in close collaboration with backend",
+  "Helped shape the product from scratch",
+  "Contributed to internal decisions and planning",
+  "Organized tasks and priorities in sprints",
+  "Delivered features under tight internal deadlines",
 ];

@@ -13,12 +13,14 @@ export const webshop = {
     { label: "Git/GitHub", icon: "FaGitAlt", color: "text-orange-500" },
   ],
   features: [
-    "Dynamic category and product detail pages with sidebar navigation",
-    "Shopping cart with add/remove/change quantity and automatic subtotal",
-    "Product detail views with description, image, price, and 'add to cart' button",
-    "Search functionality with live suggestions and results page",
-    "Fully responsive design for desktop, tablet, and mobile",
-    "Modular, reusable components",
+    "Dynamic pages with category and product details",
+    "Sidebar navigation across all product pages",
+    "Cart with add, remove and quantity change",
+    "Auto subtotal calculation in shopping cart",
+    "Detailed product view with image and button",
+    "Search with live suggestions and results",
+    "Fully responsive: desktop, tablet, mobile",
+    "Modular and reusable component structure",
   ],
 
   images: [
@@ -72,13 +74,13 @@ export const orderDigitization = {
     { label: "shadCn", icon: "SiShadcnui" },
   ],
   features: [
-    "Customer-facing frontend for browsing the menu and placing orders via QR code",
-    "Admin dashboard for managing, tracking, and updating all active orders",
-    "Status display for each table (free, ordered, served, reserved, etc.)",
-    "Fully separated interfaces for customers and staff to ensure usability and role clarity",
-    "Responsive UI optimized for mobile and tablet usage in restaurant environments",
-    "Modular code architecture, prepared for future extensions (e.g., analytics, kitchen display, multi-language support)",
-    "Multilingual setup at both UI and database level to support international restaurant teams",
+    "Frontend for menu browsing and QR orders",
+    "Admin dashboard to manage all active orders",
+    "Status display for each table and state",
+    "Separate UIs for staff and customers",
+    "Mobile-first design for restaurants and tablets",
+    "Modular codebase prepared for future features",
+    "Multilingual UI and database structure",
   ],
 
   images: [

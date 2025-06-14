@@ -72,8 +72,9 @@ export default function Projects() {
               {project.features && (
                 <ul className="mb-3 ml-5 list-disc text-base">
                   {project.features.map((f, i) => (
-                    <li className=" mb-2" key={i}>
-                      {f}
+                    <li className="flex items-center gap-3 mb-2" key={i}>
+                      <span className="w-2 h-2 bg-my-gold rounded-full inline-block"></span>
+                      <span>{f}</span>
                     </li>
                   ))}
                 </ul>

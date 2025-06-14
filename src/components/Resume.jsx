@@ -1,4 +1,3 @@
-import React from "react";
 import { IoBookOutline } from "react-icons/io5";
 import { skills } from "../lib/skills";
 import { softskills } from "../lib/skills";
@@ -65,7 +64,7 @@ export default function Resume() {
         {/* inovasiklls box */}
         <div>
           <h3 className="text-lg sm:text-xl font-semibold mt-6">
-            Frontend Developer – Restaurant App
+            Frontend Developer
             <br />
             <p className="sm:text-lg text-base font-light text-my-muted-foreground mt-1 italic">
               In collaboration with a small founder team (Inova Digital)
