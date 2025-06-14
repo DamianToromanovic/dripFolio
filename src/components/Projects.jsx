@@ -72,11 +72,8 @@ export default function Projects() {
               {project.features && (
                 <ul className="mb-3 ml-5 list-disc text-base">
                   {project.features.map((f, i) => (
-                    <li className=" flex items-center gap-3 mb-2" key={i}>
-                      <span className="w-2 h-2 rounded-full inline-block bg-my-gold">
-                        {" "}
-                      </span>{" "}
-                      <span className="text-sm sm:text-lg md:text-xl">{f}</span>
+                    <li className=" mb-2" key={i}>
+                      {f}
                     </li>
                   ))}
                 </ul>
@@ -91,7 +88,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-block px-6 py-2 text-sm sm:text-base font-semibold rounded-lg text-my-gold border border-my-gold hover:bg-my-gold hover:text-black transition-all duration-200 shadow-md mt-3"
                   >
-                    GitHub
+                    Go-live
                   </a>
                 )}
                 {project.liveDemo && (

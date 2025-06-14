@@ -28,7 +28,7 @@ export const webshop = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  repo: "https://github.com/DamianToromanovic/ecommerce",
+  repo: "https://ecommerce-damiantoromanovics-projects.vercel.app/",
 };
 
 export const projectManager = {
@@ -72,12 +72,13 @@ export const orderDigitization = {
     { label: "shadCn", icon: "SiShadcnui" },
   ],
   features: [
-    "Customer frontend for viewing the menu and placing orders via QR code",
-    "Admin dashboard for managing and tracking all incoming orders",
-    "Live status updates for each table (free, ordered, served, reserved, etc.)",
-    "Separation of concerns with two distinct UIs: customer and staff",
-    "Responsive design optimized for mobile and tablet",
-    "Modular architecture for easy expansion (e.g., analytics, kitchen display)",
+    "Customer-facing frontend for browsing the menu and placing orders via QR code",
+    "Admin dashboard for managing, tracking, and updating all active orders",
+    "Status display for each table (free, ordered, served, reserved, etc.)",
+    "Fully separated interfaces for customers and staff to ensure usability and role clarity",
+    "Responsive UI optimized for mobile and tablet usage in restaurant environments",
+    "Modular code architecture, prepared for future extensions (e.g., analytics, kitchen display, multi-language support)",
+    "Multilingual setup at both UI and database level to support international restaurant teams",
   ],
 
   images: [
@@ -88,7 +89,7 @@ export const orderDigitization = {
     "/images/webshop/screen5.png",
   ],
   status: "mvp-1",
-  repo: "https://github.com/BurnoutStudio",
+  // repo: "https://github.com/BurnoutStudio",
 };
 
-export const projects = [webshop, projectManager, orderDigitization];
+export const projects = [orderDigitization, webshop];
