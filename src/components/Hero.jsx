@@ -45,12 +45,18 @@ export default function Hero() {
         </button>
         <div className="flex items-start justify-between">
           <div className="flex gap-4 items-center 3xl:flex-col">
-            <div className="w-20 h-20 sm:w-32 sm:h-32 overflow-hidden rounded-[20%] shrink-0  bg-bright-gray">
+            <div
+              onClick={() => window.open("/images/linkedIn.JPG")}
+              className="relative w-20 h-20 sm:w-32 sm:h-32  rounded-[20%] shrink-0 bg-bright-gray cursor-pointer group"
+            >
               <img
                 src="/assets/sticker.png"
-                className="w-full object-cover"
-                alt=""
+                className="w-full h-full object-cover"
+                alt="Avatar"
               />
+
+              {/* Online-Status */}
+              <span className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full z-10 shadow-[0_0_8px_3px_rgba(34,197,94,0.8)]" />
             </div>
             <div className="">
               <h1 className="text-lg sm:text-2xl md:text-3xl font-bold ">
