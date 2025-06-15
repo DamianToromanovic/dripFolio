@@ -1,5 +1,5 @@
 export const webshop = {
-  status: "mvp-1",
+  status: "finished",
   title: "Webshop Frontend",
   description:
     "A fully responsive and modern e-commerce frontend built with Next.js and Tailwind CSS. The goal is to deliver an appealing shop experience with smooth navigation, filter features, and a functional shopping cart.",
@@ -65,7 +65,7 @@ export const orderDigitization = {
   title: "Food Order App",
   description:
     "A digital ordering system for restaurants with separate interfaces for guests and staff. Guests can order via QR code at their table, while staff manage orders and table statuses in a dedicated admin view.",
-  year: 2024,
+  year: 2025,
   techStack: [
     { label: "React", icon: "FaReact", color: "text-cyan-400" },
     { label: "Next.js", icon: "SiNextdotjs", color: "text-white" },
@@ -90,7 +90,7 @@ export const orderDigitization = {
     "/images/webshop/screen4.png",
     "/images/webshop/screen5.png",
   ],
-  status: "mvp-1",
+  status: "mvp",
   // repo: "https://github.com/BurnoutStudio",
 };
 
