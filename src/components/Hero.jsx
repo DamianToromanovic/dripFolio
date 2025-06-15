@@ -103,15 +103,15 @@ export default function Hero() {
               </a>
 
               {/* LinkedIn */}
-              {/* <a
-                href="https://linkedin.com/in/DEINNAME"
+              <a
+                href="https://linkedin.com/in/damian-toromanovic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 shadow-innerShadow  bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
               >
                 <Linkedin className="text-my-gold" />
                 <span className="text-sm sm:text:lg">LinkedIn</span>
-              </a> */}
+              </a>
             </div>
             <hr className="border-my-muted " />
             <p className="text-my-muted-foreground text-lg ">My Languages</p>
