@@ -81,6 +81,8 @@ export const orderDigitization = {
     "Mobile-first design for restaurants and tablets",
     "Modular codebase prepared for future features",
     "Multilingual UI and database structure",
+    "Manage categories, sides, and modifiers",
+    "API integration for auto translations",
   ],
 
   images: [
