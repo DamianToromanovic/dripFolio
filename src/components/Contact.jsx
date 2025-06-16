@@ -17,14 +17,11 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      const res = await fetch(
-        "https://damian-toromanovic.vercel.app/api/contact",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(form),
-        }
-      );
+      const res = await fetch("https://d-toromanovic.vercel.app/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
 
       const data = await res.json();
 
