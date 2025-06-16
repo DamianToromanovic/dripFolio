@@ -110,7 +110,7 @@ export default function Hero() {
 
               {/* LinkedIn */}
               <a
-                href="https://linkedin.com/in/damian-toromanovic"
+                href="https://linkedin.com/in/d-toromanovic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 shadow-innerShadow  bg-minor-cards rounded-xl flex items-center gap-2 hover:bg-[#2c2c2f] transition"
